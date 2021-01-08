@@ -1,11 +1,11 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require ('inquirer');
 const fs = require ('fs');
 const util = require ('util');
 const generateMarkdown = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile)
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 
 const promptUser = () =>
     inquirer.prompt([
@@ -59,7 +59,7 @@ const promptUser = () =>
 
 
 
-// TODO: Create a function to initialize app
+// function to initialize app
 const init = async () => {
     try {
         const answers = await promptUser();
