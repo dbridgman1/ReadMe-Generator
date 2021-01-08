@@ -11,10 +11,80 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
+const generateMarkdown = (answers) =>
+  `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <title>Document</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="row">
+              <h1 class="center" style="text-align: center">${answers.title}</h1>
+          </div>
+          <div class="row">
+              <h2 id="description"></h2>
+          </div><hr>
+          <div class="row">
+              <p>${answers.description}</p>
+          </div>
+          <div class="row">
+              <h2>Table of contents</h2>
+          </div><hr>
+          <div class="row">
+              <ul>
+                  <a href="#description"><li>Description</li></a>    
+                  <a href="#install"><li>Installation</li></a>
+                  <a href="#usage"><li>Usage</li></a>
+                  <a href="#license"><li>License</li></a>
+                  <a href="#contrib"><li>Contributing</li></a>
+                  <a href="#test"><li>Test</li></a>
+                  <a href="#question"><li>Questions</li></a>
+              </ul>
+          </div>
+          <div class="row">
+              <h2 id="install">Installation</h2>
+          </div><hr>
+          <div class="row">
+              <p>${answers.install}</p>
+          </div>
+          <div class="row">
+              <h2 id="usage">Usage</h2>
+          </div><hr>
+          <div class="row">
+              <p>${answers.usage}</p>
+          </div>
+          <div class="row">
+              <h2 id="license">License</h2>
+          </div><hr>
+          <div class="row">
+              <p>${answers.license}</p>
+          </div>
+          <div class="row">
+              <h2 id="contrib">Contributing</h2>
+          </div><hr>
+          <div class="row">
+              <p>${answers.contribute}</p>
+          </div>
+          <div class="row">
+              <h2 id="test">Test</h2>
+          </div><hr>
+          <div class="row">
+              <p>${answers.tests}</p>
+          </div>
+          <div class="row">
+              <h2 id="question">Questions</h2>
+          </div><hr>
+          <div class="row">
+              <p>${answers.questions}</p>
+          </div>
+      </div>
+  </body>
+  </html>
 `;
-}
+
 
 module.exports = generateMarkdown;
