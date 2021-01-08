@@ -13,7 +13,7 @@ Link for application: [ReadMe Generator](https://dbridgman1.github.io/Weather-Da
 
 ## Fucntionality
 
-![Screenshot](Develop/itils/Capture.JPG)
+![Screenshot](Develop/utils/Capture.JPG)
 
 ## Bugs and Issues
 Found a bug? Review any [open issues][open-issues] or create a [new issues here][new-issue] so we can fix it for you!
