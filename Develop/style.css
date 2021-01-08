@@ -1,0 +1,18 @@
+body  {
+    background-image: url("https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/fullset/2020/02/13/5e459de220782d0008895ed3_GD030120_FEAT_SAWGRASS_3.jpg.rend.hgtvcom.966.544.suffix/1583336377927.jpeg");
+    background-size: cover;
+}
+
+.header {
+    background-color: darkgray;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.container {
+    background-color: lightgray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.row {
+    padding-left: 20px;
+}
