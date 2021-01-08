@@ -17,16 +17,18 @@ const generateMarkdown = (answers) =>
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./readme generatpr.css">
       <title>Document</title>
   </head>
   <body>
       <div class="container">
-          <div class="row">
-              <h1 class="center" style="text-align: center">${answers.title}</h1>
+          <div class="row justify-content-center header">
+              <h1 id="header">${answers.title}</h1>
           </div>
           <div class="row">
-              <h2 id="description"></h2>
+              <h2 id="description">Description</h2>
           </div><hr>
           <div class="row">
               <p>${answers.description}</p>
@@ -79,7 +81,10 @@ const generateMarkdown = (answers) =>
               <h2 id="question">Questions</h2>
           </div><hr>
           <div class="row">
-              <p>${answers.questions}</p>
+              <a href="https://github.com/${answers.questions}">Link to github profile</a>
+          </div>
+          <div class="row">
+              <p>I can be reach by email at ${answers.question}></p>
           </div>
       </div>
   </body>
