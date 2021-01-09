@@ -28,12 +28,13 @@ const promptUser = () =>
         {
             type: 'input',
             name: 'usage',
-            message: 'What is the usage for this application',
+            message: 'What is the usage for this application?',
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
             message: 'What license if any does this application hold?',
+            choices: ['null', 'GNU-AGPLv3', 'GNU-GPLv3', 'GNU-LGPLv3'],
         },
         {
             type: 'input',
