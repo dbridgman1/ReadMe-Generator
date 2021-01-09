@@ -5,6 +5,7 @@ const util = require ('util');
 const generateMarkdown = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile)
 
+
 // array of questions for user input
 
 const promptUser = () =>
@@ -63,8 +64,8 @@ const promptUser = () =>
 const init = async () => {
     try {
         const answers = await promptUser();
-        const html = generateMarkdown(answers);
-        await writeFileAsync('index.html', html)
+        const md = generateMarkdown(answers);
+        await writeFileAsync('readme.md', md)
         console.log('successful')
     } catch (error) {
         console.log(error)
