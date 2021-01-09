@@ -3,7 +3,11 @@
 function renderLicenseBadge(license) {
     if (license === null) return "";
     else{
-       return `https://img.shields.io/badge/license-${license}-red`
+       return (`
+![](https://img.shields.io/badge/license-${license}-red)
+![](https://img.shields.io/badge/issues-${license}-red)
+![](https://img.shields.io/badge/forks-${license}-red)
+       `)
     }
     
     
@@ -12,13 +16,32 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-    return "https://choosealicense.com/"
-
+    switch (license) {
+        case 'GNU-AGPLv3':
+            return 'https://choosealicense.com/licenses/agpl-3.0/';
+            break;
+        case 'GNU-GPLv3':
+            return 'https://choosealicense.com/licenses/gpl-3.0/';
+            break;
+        case 'GNU-LGPLv3':
+            return 'https://choosealicense.com/licenses/lgpl-3.0/';
+            break;
+        default:
+            break;
+        
+    }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+    if (license === null) {
+        return '';
+    } else {
+        return `
+Click to view license [${license}](${renderLicenseLink(license)})`;
+    }
+}
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (answers) =>
@@ -47,6 +70,7 @@ ${answers.usage}
 
 ## License
 ${renderLicenseSection(answers.license)}
+${renderLicenseBadge(answers.license)}
 
 ## Contributing
 ${answers.contribute}
@@ -56,6 +80,7 @@ ${answers.tests}
 
 ## Questions
 [Github Profile]("https://github.com/${answers.questions}")
+<br>
 I can be reached by email at ${answers.question}
   
 `  
