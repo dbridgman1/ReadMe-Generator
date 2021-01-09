@@ -17,13 +17,13 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     switch (license) {
-        case 'GNU-AGPLv3':
+        case 'AGPLv3':
             return 'https://choosealicense.com/licenses/agpl-3.0/';
             break;
-        case 'GNU-GPLv3':
+        case 'GPLv3':
             return 'https://choosealicense.com/licenses/gpl-3.0/';
             break;
-        case 'GNU-LGPLv3':
+        case 'LGPLv3':
             return 'https://choosealicense.com/licenses/lgpl-3.0/';
             break;
         default:
@@ -48,6 +48,8 @@ const generateMarkdown = (answers) =>
   `
 #  ${answers.title}
 
+${renderLicenseBadge(answers.license)}
+
 ## Description
   
 ${answers.description}
@@ -70,7 +72,6 @@ ${answers.usage}
 
 ## License
 ${renderLicenseSection(answers.license)}
-${renderLicenseBadge(answers.license)}
 
 ## Contributing
 ${answers.contribute}
