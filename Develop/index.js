@@ -34,7 +34,7 @@ const promptUser = () =>
             type: 'list',
             name: 'license',
             message: 'What license if any does this application hold?',
-            choices: ['null', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3'],
+            choices: ['null', 'AGPLv3', 'GPLv3', 'LGPLv3'],
         },
         {
             type: 'input',
