@@ -38,7 +38,7 @@ Please refer to each project's style and contribution guidelines for submitting 
 To run test on this application clone the repo to your local computer.  Open the file and terminal.  Then refer to the usage section on how to operate the application.
 
 ## Questions
-[Github Profile]("https://github.com/dbridgman1")
+[Github Profile](https://github.com/dbridgman1)
 <br>
 I can be reached by email at bridgmand@gamil.com
   

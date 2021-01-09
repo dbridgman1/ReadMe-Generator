@@ -80,7 +80,7 @@ ${answers.contribute}
 ${answers.tests}
 
 ## Questions
-[Github Profile]("https://github.com/${answers.questions}")
+[Github Profile](https://github.com/${answers.questions})
 <br>
 I can be reached by email at ${answers.question}
   
