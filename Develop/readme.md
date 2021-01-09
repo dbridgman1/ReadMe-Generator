@@ -35,10 +35,10 @@ Click to view license [AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
 Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
 ## Test
-
+To run test on this application clone the repo to your local computer.  Open the file and terminal.  Then refer to the usage section on how to operate the application.
 
 ## Questions
 [Github Profile]("https://github.com/dbridgman1")
 <br>
-I can be reached by email at Drew@yahoo.com
+I can be reached by email at bridgmand@gamil.com
   
